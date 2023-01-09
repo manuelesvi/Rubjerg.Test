@@ -1,6 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Rubjerg.Graphviz;
-using System.Xml.Linq;
 
 Console.WriteLine("Hello, World!");
 var root = RootGraph.CreateNew("Mi Arbol", GraphType.Directed);
@@ -58,4 +57,7 @@ root.ToDotFile(Path.Combine(Directory.GetCurrentDirectory(), "out.dot"));
 
 root.ComputeLayout();
 root.ToSvgFile(Path.Combine(Directory.GetCurrentDirectory(), "out.svg"));
+root.ToPngFile(Path.Combine(Directory.GetCurrentDirectory(), "out.png"));
 root.FreeLayout();
+
+
