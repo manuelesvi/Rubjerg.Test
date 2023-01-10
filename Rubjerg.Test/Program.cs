@@ -58,6 +58,7 @@ root.ToDotFile(Path.Combine(Directory.GetCurrentDirectory(), "out.dot"));
 root.ComputeLayout();
 root.ToSvgFile(Path.Combine(Directory.GetCurrentDirectory(), "out.svg"));
 root.ToPngFile(Path.Combine(Directory.GetCurrentDirectory(), "out.png"));
+root.ToPdfFile(Path.Combine(Directory.GetCurrentDirectory(), "out.pdf"));
 root.FreeLayout();
 
 
