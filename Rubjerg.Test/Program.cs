@@ -1,6 +1,6 @@
 using Rubjerg.Graphviz;
 
-var root = RootGraph.CreateNew("Mi Arbol", GraphType.Directed);
+var root = RootGraph.CreateNew("El Árbol", GraphType.Directed);
 Graph.IntroduceAttribute(root, "size", "11,8.5!");
 Node.IntroduceAttribute(root, "label", "");
 
